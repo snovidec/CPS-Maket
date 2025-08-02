@@ -1,0 +1,67 @@
+@import url(fonts.css);
+
+/* Mobile First */
+.body{
+  font-family:'TTLakes', sans-serif;   
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: rgba(248, 248, 248, 1); 
+}
+
+.header{
+  width: 720;
+  height: 64;
+  top: 0px;
+  left: 24px;
+}
+
+.nav__menu{
+  display: flex;
+  background-color: #f4fbfb;
+  border: 2px;
+  font-family: TTLakes;
+  font-weight: 500;  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.nav__menu--list{
+background-color: #f4fbfb;
+}
+
+.nav__menu--list:first-child{
+border: 2px solid #41f6d7;
+border-radius: 5px;
+padding 6px;
+}
+
+.main{
+width: 720;
+height: 208;
+top: 256px;
+left: 24px;
+overflow: scroll;
+}
+
+/* Адаптив для Планшетов */
+@media (min-width: 768px) {
+  .body{
+    font-family:TTLakes, sans-serif;   
+    background-color: #f4fbfb;
+    font-family: TTLakes;
+    font-size: 20px;
+    color: #333;
+  }
+}
+@media(min-width: 1024px){
+  .body{
+    font-family:TTLakes, sans-serif;   
+    background-color: #f4fbfb;
+    font-family: TTLakes;
+    font-size: 20px;
+    color: #333;
+}
+  
+}
+
