@@ -1,67 +1,201 @@
-@import url(fonts.css);
+@import url("fonts.css");
 
-/* Mobile First */
-.body{
-  font-family:'TTLakes', sans-serif;   
+.body {
+  font-family: 'TTLakes', sans-serif;
+  background-color: #F8F8F8;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  width: 100%;
+  padding: 0 16px;
+  gap: 16.73px;
+}
+
+.header__nav-left,
+.header__nav-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header__divider img {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+
+}
+
+.main {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  background-color: rgba(248, 248, 248, 1); 
+  padding: 0 16px;
 }
 
-.header{
-  width: 720;
-  height: 64;
-  top: 0px;
-  left: 24px;
-}
-
-.nav__menu{
+.main__title {
   display: flex;
-  background-color: #f4fbfb;
-  border: 2px;
-  font-family: TTLakes;
-  font-weight: 500;  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
+  align-items: center;
+  gap: 16px;
+  padding-top: 42px;
 }
 
-.nav__menu--list{
-background-color: #f4fbfb;
+.main__title-highlight {
+  width: 4px;
+  height: 40px;
+  background-color: #41F6D7;
+  border: none;
+  margin: 0;
 }
 
-.nav__menu--list:first-child{
-border: 2px solid #41f6d7;
-border-radius: 5px;
-padding 6px;
+.main_title-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1B1C21;
 }
 
-.main{
-width: 720;
-height: 208;
-top: 256px;
-left: 24px;
-overflow: scroll;
+.main__buttons {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  padding: 24px 0;
+  -ms-overflow-style: none;  /* IE */
+  scrollbar-width: none;     /* Firefox */
 }
 
-/* Адаптив для Планшетов */
+.main__buttons::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.main__buttons button {
+  white-space: nowrap;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: 2px solid #EAEAEA;
+  background: #F8F8F8;
+  font-size: 16px;
+  color: #1B1C21;
+  flex-shrink: 0;
+}
+
+.main__article {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  font-size: 16px;
+  color: #1B1C21;
+  line-height: 1.5;
+}
+
+.main__article p {
+  flex: 1;
+  max-width: 70%;
+}
+
+.main__img {
+  flex: 1;
+  max-width: 120px;
+  height: auto;
+}
+
+/* Читать далее */
+.main__read {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #1B1C21;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+
+.main__read::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  background-image: url('/CPS-Maket/icons/icon-read.svg');
+  background-size: contain;
+}
+
+
+/* Адаптив Планшет*/
 @media (min-width: 768px) {
-  .body{
-    font-family:TTLakes, sans-serif;   
-    background-color: #f4fbfb;
-    font-family: TTLakes;
-    font-size: 20px;
-    color: #333;
+  .main__title {
+    padding-left: 0;
+  }
+
+  .main__buttons {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    gap: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .main__buttons button {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  .main__article {
+    flex-direction: row;
+  }
+
+  .main__img {
+    max-width: 140px;
   }
 }
-@media(min-width: 1024px){
-  .body{
-    font-family:TTLakes, sans-serif;   
-    background-color: #f4fbfb;
-    font-family: TTLakes;
-    font-size: 20px;
-    color: #333;
-}
-  
-}
 
+/* Адаптив Десктоп*/
+@media (min-width: 1024px) {
+  .main {
+    padding: 0 32px;
+    gap: 32px;
+  }
+
+  .main__title {
+    padding-top: 50px;
+    gap: 24px;
+  }
+
+  .main_title-text {
+    font-size: 32px;
+  }
+
+  .main__buttons {
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 12px;
+  }
+
+  .main__buttons button {
+    flex: 0 0 auto;
+  }
+
+  .main__article {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .main__img {
+    max-width: 240px
+  }
+
+  .main__read {
+    font-size: 18px;
+  }
+}

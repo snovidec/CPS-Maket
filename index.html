@@ -11,41 +11,53 @@
         <!-- Шапка -->
         <header>
             <!-- Навигация -->
-            <nav class="header_nav"> 
+            <div class="header__nav"> 
                 <!-- Навигация слева-->
-                 <div>
-                    <button></button>
-                    <img src="icons/burger.svg" alt="Меню">
-                    <button></button>
-                    <img src="icons/Group.svg" alt="Логотип">
-                    
+                <div class="header__nav-left">
+                    <button><img src="icons/burger.svg" alt="Меню"></button>
+                    <button class="header__divider img"><img src="icons/divider.png" alt="Разделитель"></button>
+                    <button><img src="icons/Group.svg" alt="Логотип"></button>
+                          
                 </div>
                 <!-- Навигация справа-->
-                <div></div>
-                <div></div>
-                <div></div>
-            </nav>
-            <!-- Название -->
-            <h2>Услуги и сервисы</h2>
-            <div class="nav__menu">
-                    <ul class="nav__menu--list">
-                        <li class="nav__item"><a href="#">Ремонтируемые бренды</a></li>
-                        <li class="nav__item"><a href="#">Ремонтируемые устройства</a></li>
-                        <li class="nav__item"><a href="#">Цены на услуги</a></li>
-                        <li class="nav__item"><a href="#">Адреса сервисных центров</a></li>
-                        <li class="nav__item"><a href="#">Специальные цены</a></li>
-                        <li class="nav__item"><a href="#">Отзывы</a></li>
-                    </ul>
+                <div class="header__nav-right">   
+                    <button><img src="icons/call.svg" alt="Иконка телефона"></button>
+                    <button><img src="icons/chat.svg" alt="Иконка чата"></button>
+                    <button><img src="icons/profile.svg" alt="Иконка профиля"></button>
+                    <button><img src="icons/divider.png" alt="Иконка разделителя"></button>    
+                    <button><img src="icons/repair.svg" alt="Иконка ремонта"></button>
+                    <button><img src="icons/checkstatus.svg" alt="Иконка поиска">  </button>
+                        
+                </div> 
             </div>
         </header>
+        
         <main class="main">
-            <section>
-             <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. 
+            <div class="main__title">
+                <!-- Название -->
+                <button class="main__title-highlight" ><img src="icons/highlight.svg" alt="Выделение"></button>
+                <h2 class="main__title-text">Услуги и сервисы</h2>
+            </div>
+            <!--Перечень услуг -->
+                <div class="main__buttons">
+                        <button>Ремонтируемые бренды</button>
+                        <button>Ремонтируемые устройства</button>
+                        <button>Цены на услуги</button>
+                        <button>Адреса сервисных центров</button>
+                        <button>Специальные цены</button>
+                        <button>Отзывы</button>
+                 </div>
+            <!--Описание деятельности  -->
+             <div class="main__article">
+                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. 
             Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-                <img src="img/cps.png" alt="Здесь изображен логотип CPS" class="main__img">
-             </section>
-            
-             <h3>Читать далее</h3>
+                <img src="img/cps.png" alt="Здесь изображен логотип CPS" class="main__img"><!-- Логотип -->
+             </div>
+
+             <!-- Продолжение чтения -->
+             <div class="main__read">
+                <h3>Читать далее</h3>
+            </div>
         </main>
 
     </body>
