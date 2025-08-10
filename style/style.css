@@ -84,6 +84,12 @@
   padding-top: 42px;
 }
 
+.main__title-first {
+  display: flex;            /* Размещаем значок и текст в одну строку */
+  align-items: center;      /* Выравниваем по вертикали по центру */
+  gap: 8px;                  /* Отступ между значком и текстом */
+}
+
 .main__title-highlight {
   width: 4px;
   height: 40px;
@@ -168,11 +174,15 @@ p{
   max-width: 70%;
 }
 
+.main__article-read { 
+  display: flex;
+  flex-direction: row;
+}
+
 .main__img {
-  padding-right: 37px;
-  max-width: 100%;
+  padding-right: 25px;
+  max-width: auto;
   height: auto;
-  display: block;
 
 }
 
@@ -260,9 +270,10 @@ p{
   }
 
   .main__img {
-    max-width: 50%;
+    max-width: auto;
     height: auto;
     position: static;
+    align-self: auto;
 
   }
 }
@@ -303,17 +314,25 @@ p{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-top: 50px;
-    gap: 24px;
+    align-items: center;
+    flex-direction: row;
   }
+ .main__title-first {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 
+
+  }
   .main_title-text {
 
-    font-size: 32px;
+    font-size: 5px;
+    font-weight: 700;
   }
 
   .main__buttons {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     row-gap: 16px;
     column-gap: 12px;
@@ -332,7 +351,9 @@ p{
   }
   
   .main__buttons--hidden {
-    display: block;
+    display: flex !important;
+    flex-shrink: 0;
+    gap: 16px;
   }
 
   .main__buttonText {
@@ -346,6 +367,7 @@ p{
   }
   
   .main__article {
+    flex-direction: row;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 32px

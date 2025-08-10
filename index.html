@@ -35,9 +35,11 @@
         <main class="main">
             <div class="main__title">
                 <!-- Название -->
-                <button class="main__title-highlight" ><img src="icons/highlight.svg" alt="Выделение"></button>
-                <h1 class="main__title-text">Услуги и сервисы</h1>
-                <div class="main__buttons main__buttons--hidden">
+                <div class="main__title-first">
+                    <button class="main__title-highlight"><img src="icons/highlight.svg" alt="Выделение"></button>
+                    <h1 class="main__title-text">Услуги и сервисы</h1>
+                </div>
+                <div class="main__buttons--hidden">
                     <button class="header__buttons">
                         <p class="main__buttonText"> Оставить заявку</p>
                         <img src="icons/repair.svg" alt="Иконка ремонта">
@@ -61,16 +63,21 @@
                  </div>
             <!--Описание деятельности  -->
              <div class="main__article">
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. 
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                <div>
+                 <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. 
+            <br> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                    <div class="main__article-read" >
+                        <img class="read__arrows" src="/icons/icon-read.svg" alt="Стрелка">
+                        <h2 class="main__text">Читать далее</h2>
+                    </div>
+                </div>
+                <div class="main__img">
                 <img src="img/cps.png" alt="Здесь изображен логотип CPS" class="main__img"><!-- Логотип -->
+                </div>
              </div>
 
              <!-- Продолжение чтения -->
-             <div class="main__read">
-                <img class="read__arrows" src="/CPS-Maket/icons/icon-read.svg" alt="Стрелка">
-                <h2 class="main__text">Читать далее</h2>
-            </div>
+
         </main>
 
     </body>
