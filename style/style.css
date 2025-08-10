@@ -134,7 +134,7 @@
   white-space: nowrap;
   border-radius: 6px;
   padding: 8px 16px;
-  border: 2px solid #EAEAEA;
+  border: 0px solid #EAEAEA;
   background: transparent;
   font-size: 16px;
   color: #1B1C21;
@@ -163,10 +163,11 @@
   color: #1B1C21;
   line-height: 1.5;
   padding: 0 16px;
+  margin: auto;
 }
 
 p{
-  padding: 4px;
+  padding: 15px;
 }
 
 .main__article p {
@@ -180,8 +181,8 @@ p{
 }
 
 .main__img {
-  padding-right: 25px;
-  max-width: auto;
+  padding-right: 15px;
+  width: 100%;
   height: auto;
 
 }
@@ -270,7 +271,7 @@ p{
   }
 
   .main__img {
-    max-width: auto;
+    width: 100%;
     height: auto;
     position: static;
     align-self: auto;
@@ -368,14 +369,14 @@ p{
   
   .main__article {
     flex-direction: row;
-    max-width: 1200px;
+    max-width: 100;
     margin: 0 auto;
     padding: 0 32px
   }
 
   .main__img {
-    max-width: 531px;
-    height: 383.24127197265625px;
+    width: 100%;
+    height: auto;
     opacity: 1;
     top: 140.63px;
     left: 561px;
