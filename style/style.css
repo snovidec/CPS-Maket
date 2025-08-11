@@ -166,13 +166,12 @@
   margin: auto;
 }
 
+.text2{
+    display: none;
+  }
+
 p{
   padding: 15px;
-}
-
-.main__article p {
-  flex: 1;
-  max-width: 70%;
 }
 
 .main__article-read { 
@@ -273,7 +272,16 @@ p{
   .main__article {
     flex-direction: row;
   }
+  .text2{
+    display: -webkit-box;
+    overflow:hidden ;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+}
 
+  .text2Hidden{
+    display: none;
+  }
   .main__img {
     width: 100%;
     height: auto;
@@ -386,6 +394,10 @@ p{
     left: 561px;
 
   }
+  .text2Hidden{
+    display: block;
+  }
+  
 
   .main__read {
     font-size: 18px;
