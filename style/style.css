@@ -146,12 +146,15 @@
     border: 3px;
     background-color: #ffffff
   }
-.main__buttons button:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-}
+
+
 .main__buttons--hidden{
     display: none;
+  }
+
+  .main__button:hover {
+    border: 3px solid #b8ffec;
+    background-color: #ffffff;
   }
 
 .main__article {
@@ -165,14 +168,17 @@
   padding: 0 16px;
   margin: auto;
 }
-
+ .textflex{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 20px;
+ }
 .text2{
     display: none;
   }
 
-p{
-  padding: 9px;
-}
+
 
 .main__article-read { 
   display: flex;
@@ -188,14 +194,15 @@ p{
 }
 
 .main__text {
-    display: flex;
-    height: 24px;
-    font-size: 16px;
-    font-family: "TTakes";
-    line-height: 24px;
-    letter-spacing: -0.2px;
+        display: inline-flex;
+        align-items: center;
+    gap: 20px;
+    color: #1B1C21;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.2s;
 }
-
 /* Читать далее */
 .main__read {
   display: flex;
@@ -218,8 +225,9 @@ p{
 
 
 .read__arrows {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+    height: 16px;
+    display: inline-block;
   
 }
 
@@ -227,6 +235,8 @@ p{
   padding-right: 5px;
 
 }
+
+
 /* Адаптив Планшет*/
 @media (min-width: 768px) {
   .header__nav {
@@ -255,12 +265,19 @@ p{
     background-color: transparent;
     
   }
+  .main__buttons:first-child {
+    border: 2px solid #b8ffec;
+  }
   .main__button {
     background-color: transparent;
   }
 
   .main__buttons--hidden {
     display: none;
+  }
+  .main__button:hover {
+    border: 3px solid #b8ffec;
+    background-color: #ffffff;
   }
 
   .main__buttons button {
@@ -331,6 +348,7 @@ p{
     flex-direction: row;
     align-items: center;
     flex-direction: row;
+    padding-right: 25px;
   }
  .main__title-first {
   display: flex;
@@ -352,7 +370,7 @@ p{
     row-gap: 16px;
     column-gap: 12px;
     background-color: transparent;
-    padding-bottom: 10px;
+    gap: 10px;
     overflow-x: scroll;
   }
   .button{
@@ -360,7 +378,7 @@ p{
   }
   
 
-  .main__button:active {
+  .main__button:hover {
     border: 3px solid #b8ffec;
     background-color: #ffffff;
   }
@@ -389,12 +407,9 @@ p{
   }
 
   .main__img {
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    top: 140.63px;
-    left: 561px;
+    height: 100%;
     border-radius: 8px;
+    
 
   }
   .text2Hidden{
