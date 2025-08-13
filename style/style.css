@@ -7,7 +7,7 @@
 }
 
 .body {
-  font-family: 'TTLakes', sans-serif;
+  font-family: TTLakes, sans-serif;
   background-color: #F8F8F8;
   margin: 0;
   padding: 0;
@@ -287,20 +287,20 @@
     flex-direction: row;
   }
   .text2{
-    display: -webkit-box;
+    display:flex;
     overflow:hidden ;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp:3;
+    
 }
 
   .text2Hidden{
     display: none;
   }
+
+  .main_textflex{
+    width: 50%;
+  }
   .main__img {
-    height: auto;
-    position: static;
-    align-self: auto;
-    border-radius: 8px;
+    width: 50%;
 
   }
 }
@@ -403,6 +403,7 @@
   .main__img {
     height: 100%;
     border-radius: 8px;
+    width: 50%;
     
 
   }
