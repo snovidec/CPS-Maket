@@ -1,7 +1,7 @@
 /* fonts.css */
 @font-face {
   font-family:TTLakes;
-  src: url(/CPS-Maket/fonts/TTLakes-Regular.woff) format('truetype');  
+  src: url(CPS-Maket/fonts/TTLakes-Regular.woff) format('truetype');  
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family:TTLakes;
-  src: url(/CPS-Maket/fonts/TTLakes-Bold.woff) format('truetype');  
+  src: url(CPS-Maket/fonts/TTLakes-Bold.woff) format('truetype');  
   font-weight: 700;
   font-style: normal;
   font-display: swap;
