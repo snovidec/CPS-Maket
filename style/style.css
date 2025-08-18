@@ -1,5 +1,3 @@
-@import url("fonts.css");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -74,6 +72,18 @@
   max-width: 100vw;
   overflow: hidden;
 }
+/* Стили левого всплывающего меню */
+.leftbar {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 320px;
+    z-index: 100;
+    height: 100em;
+    border: 2px solid #41F6D7;
+  }
 
 .main__title {
   display: flex;
@@ -160,6 +170,7 @@
   padding: 0 16px;
   margin: auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
   .main_textflex{
@@ -288,7 +299,7 @@
   }
   .text2{
     display:flex;
-    overflow:hidden ;
+    overflow:visible ;
     
 }
 
@@ -300,14 +311,15 @@
     width: 50%;
   }
   .main__img {
-    width: 50%;
+    width: 30%;
 
   }
 }
 
 /* Адаптив Десктоп*/
 @media (min-width: 1024px) {
-  
+
+    
   .header__nav {
     padding: 0 32px;
     display: none;
