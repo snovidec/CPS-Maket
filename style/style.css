@@ -72,6 +72,8 @@
   max-width: 100vw;
   overflow: hidden;
 }
+
+
 /* Стили левого всплывающего меню */
 .leftbar {
     display: flex;
@@ -81,9 +83,133 @@
     align-items: flex-start;
     width: 320px;
     z-index: 100;
-    height: 100em;
-    border: 2px solid #41F6D7;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 10px 0 20px 15px rgba(0, 0, 0, 0.2), inset 1px 0 0 rgba(0, 0, 0, 0.5);
+    overflow-y: hidden;
   }
+
+  .leftbar__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    padding-bottom: 20px;
+    
+  }
+  .leftbar__header-navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    padding: 0 16px;
+    
+  }
+
+  .leftbar__header-navigationleft{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    
+        
+  }
+  .leftbar__header-navigationright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    gap: 16px;
+        
+  }
+
+  .leftbar__btn {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 2px;
+  }
+
+  .leftbar__btn img :hover {
+    transition: transform 0.9s ease-in-out;
+  }
+
+  .leftbar__mainmenu {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .leftbar__listbtn {
+    display: flex;
+    justify-content: flex-start;
+    width: max-content;
+    height: 24px;
+    background: none;
+    color: #1b1c21;
+    font-weight: 500;
+    font-family: TT Lakes;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .leftbar__mainmenulist {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 320px;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: none;
+  }
+
+  .leftbar__mainmenuhighlight {
+    position: absolute;
+  }
+
+  .leftbar__footercontacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .leftbar__footerlanguage {
+    display: flex;
+    gap: 16px;
+  }
+  .leftbar__footerbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding-left: 16px;
+  }
+
+  .leftbar__mailtext {
+    font-family: TT Lakes;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+  }
+
+  .leftbar__phonenumber {
+    width: 24px;
+    height: 24px;
+    top: 968px;
+    left: 56px;
+    font-family: TTLakes;
+    font-weight: 700;
+    font-size: 24px;
+
+  }
+
+  /* Конец стилей левого всплывающего меню */
 
 .main__title {
   display: flex;
