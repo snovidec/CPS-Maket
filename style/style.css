@@ -102,7 +102,8 @@
     justify-content: space-around;
     align-items: center;
     gap: 16px;
-    padding: 0 16px;
+    padding-top: 20px;
+    padding-left: 16px;
     
   }
 
@@ -118,7 +119,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding-left: 40px;
     gap: 16px;
         
   }
@@ -136,6 +137,7 @@
   .leftbar__mainmenu {
     display: flex;
     flex-direction: column;
+    padding-left: 24px;
 
   }
 
@@ -144,16 +146,26 @@
     justify-content: flex-start;
     width: max-content;
     height: 24px;
-    background: none;
+    background-color: #ffffff;
     color: #1b1c21;
     font-weight: 500;
-    font-family: TT Lakes;
-    white-space: nowrap;
+    font-family: TTLakes;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     border: none;
     cursor: pointer;
+  
+
+  }
+
+  .leftbar__listbtn:hover {
+    border-bottom: 3px solid #41F6D7;
+  }
+
+  .leftbar__listbtn:active{
+    transition: transform 6s ease-in-out;
+    color: antiquewhite;
   }
 
   .leftbar__mainmenulist {
@@ -168,11 +180,22 @@
 
   .leftbar__mainmenuhighlight {
     position: absolute;
+    padding-left: 0px;
+    width: 4px;
+    height: 32px;
+    border: none;
   }
-
-  .leftbar__footercontacts {
+  .leftbar__footer {
     display: flex;
     flex-direction: column;
+    width: 320px;
+    padding-left: 24px;
+    padding-bottom: min(20px, 3vh);
+    
+}
+  .leftbar__footercontacts {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 16px;
   }
@@ -199,13 +222,12 @@
   }
 
   .leftbar__phonenumber {
-    width: 24px;
-    height: 24px;
-    top: 968px;
-    left: 56px;
-    font-family: TTLakes;
-    font-weight: 700;
-    font-size: 24px;
+   
+    display: inline-block;
+    color: #000507;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
 
   }
 

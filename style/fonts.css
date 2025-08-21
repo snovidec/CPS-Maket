@@ -1,16 +1,27 @@
-/* fonts.css */
 @font-face {
-  font-family:TTLakes;
-  src: url(CPS-Maket/fonts/TTLakes-Regular.woff) format(.woff);  
-  font-weight: 500;
-  font-style: normal;
- 
+    font-family: TT Lakes;
+    src: url(fonts/TTLakes-Bold.ttf) format ("truetype");
+    font-style: normal;
+    font-weight: 700;
 }
 
 @font-face {
-  font-family:TTLakes;
-  src: url(CPS-Maket/fonts/TTLakes-Bold.woff) format(.woff);  
-  font-weight: 700;
-  font-style: normal;
-  
+    font-family: TT Lakes;
+    src: url(fonts/TTLakes-Light.ttf) format ("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: TT Lakes;
+    src: url(fonts/TTLakes-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: TT Lakes;
+    src: url(fonts/TTLakes-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
 }
