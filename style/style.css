@@ -176,7 +176,7 @@
     background-color: #ffffff;
     color: #1b1c21;
     font-weight: 500;
-    font-family: TTLakes;
+    font-family: 'TT Lakes', serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -592,7 +592,7 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    font-family: TTLakes;
+    font-family: 'TT Lakes', serif;
     font-weight: 500;
     color: #1B1C21;
   }
