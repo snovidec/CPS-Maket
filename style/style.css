@@ -5,7 +5,7 @@
 }
 
 .body {
-  font-family: TTLakes, sans-serif;
+  font-family:'TT Lakes', serif;
   background-color: #F8F8F8;
   margin: 0;
   padding: 0;
@@ -78,9 +78,8 @@
 .leftbar {
     display: flex;
     position: fixed;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    flex-direction: column;
+     align-items: flex-start;
     width: 320px;
     z-index: 100;
     height: 100vh;
@@ -89,12 +88,27 @@
     overflow-y: hidden;
   }
 
+  .leftbar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 39px;
+    background-color: #41F6D7;
+    border-radius: 0 6px 6px 0;
+    transition: top 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+
   .leftbar__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 320px;
     padding-bottom: 20px;
+    margin-bottom: 40px;
     
   }
   .leftbar__header-navigation{
@@ -103,7 +117,7 @@
     align-items: center;
     gap: 16px;
     padding-top: 20px;
-    padding-left: 16px;
+    padding-left: 24px;
     
   }
 
@@ -128,16 +142,29 @@
     border: none;
     background-color: #ffffff;
     border-radius: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
   }
 
-  .leftbar__btn img :hover {
-    transition: transform 0.9s ease-in-out;
+  .leftbar__btn:active {
+    transition: transform 0
   }
+
+  .leftbar__btn img:hover {
+    transition: scale 0.3s ease;
+    transform: scale(1.1);
+  }
+  .btn--highlight {
+    border: none;
+  }
+
 
   .leftbar__mainmenu {
     display: flex;
     flex-direction: column;
+    width: 320px;
     padding-left: 24px;
+    margin-bottom: 40px;
 
   }
 
@@ -161,18 +188,18 @@
 
   .leftbar__listbtn:hover {
     border-bottom: 3px solid #41F6D7;
+    transform: scale(1.1);
   }
 
   .leftbar__listbtn:active{
-    transition: transform 6s ease-in-out;
-    color: antiquewhite;
+    transition: transform 0.9s ease-in-out;
+    opacity: 0.5;
   }
 
   .leftbar__mainmenulist {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 320px;
     align-items: flex-start;
     background-color: #ffffff;
     border: none;
@@ -180,54 +207,70 @@
 
   .leftbar__mainmenuhighlight {
     position: absolute;
-    padding-left: 0px;
+    padding-left: 0;
     width: 4px;
     height: 32px;
     border: none;
+    margin-top: 200px;
   }
   .leftbar__footer {
     display: flex;
     flex-direction: column;
     width: 320px;
-    padding-left: 24px;
+    padding: 24px;
     padding-bottom: min(20px, 3vh);
     
 }
   .leftbar__footercontacts {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
+    
   }
 
   .leftbar__footerlanguage {
     display: flex;
-    gap: 16px;
+    gap: 7px;
+
   }
   .leftbar__footerbtn {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
-    padding-left: 16px;
+    cursor: pointer;
+   
   }
-
-  .leftbar__mailtext {
-    font-family: TT Lakes;
-    font-weight: 500;
+  .btn--lang {
+    font-family: 'TT Lakes', serif;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: #1B1C21;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  .btn--lang:hover  {
+     transform: scale(1.1);
+     font-weight: 700;
+    
+
+  }
+  .leftbar__mailtext {
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B1C21;
+    margin-bottom: 12px;
 
   }
 
   .leftbar__phonenumber {
-   
-    display: inline-block;
-    color: #000507;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
+    font-family: 'TT Lakes', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1B1C21;
+    margin-bottom: 40px;
 
   }
 
