@@ -76,7 +76,7 @@
 
 /* Стили левого всплывающего меню */
 .leftbar {
-    display: flex;
+    display: none;
     position: fixed;
     flex-direction: column;
      align-items: flex-start;
@@ -435,6 +435,26 @@
 
 }
 
+/* Свайпер */
+
+.sliderHeader {
+  max-width: 320px;
+}
+
+.sliderText {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 16px;
+    color: #7e7e82;
+    text-transform: uppercase;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 
 /* Адаптив Планшет*/
 @media (min-width: 768px) {
@@ -511,6 +531,9 @@
 @media (min-width: 1024px) {
 
     
+ .leftbar {
+  display: flex;
+ }
   .header__nav {
     padding: 0 32px;
     display: none;
