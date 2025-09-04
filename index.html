@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/fonts.css">
          <link rel="stylesheet" href="style/style.css"><!-- Подключение стилей -->
+         <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         
         <title>Услуги и сервис CPS</title>
     </head>
 
     <body class="body">
-        <script src="script/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- Левое меню  -->
 <div class="leftbar">
@@ -159,34 +159,115 @@
     
 </div>
 
-         <!-- Slider main container -->
-<div class="swiper">
-    <p2 class="sliderText">Ремонт техники различных брендов</p2>
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    <div class="swiper-slide">Slide 4</div>
-    <div class="swiper-slide">Slide 5</div>
-    <div class="swiper-slide">Slide 6</div>
-    <div class="swiper-slide">Slide 7</div>
-    <div class="swiper-slide">Slide 8</div>
-    <div class="swiper-slide">Slide 9</div>
-    <div class="swiper-slide">Slide 10</div>
-    <div class="swiper-slide">Slide 11</div>
-    <div class="swiper-slide">Slide 12</div>
-    ...
-  </div>
-    <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+ <div class="header">
+      <div class="header__title">Ремонт техники различных брендов</div>
+ </div>
+<!-- свайпер -->
+<div class="swiper" id="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" id="wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="lenovo"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="samsung"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="apple"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="bosch"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="hp"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="acer"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="view-sonic"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="sony"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="lenovo"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="samsung"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" id="slide">
+            <div class="card">
+              <div class="card__container">
+                <div class="apple"></div>
+                <button class="button__dropdown"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination" id="pagination"></div>
+        <div class="line"></div>
+      </div>
+      <div class="about__read-more">
+        <div class="read-more__expand"></div>
+        <div class="read-more__text">Показать все</div>
+      </div>      
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+<!-- конец свайпера -->
+
         </main>
+         <script src="/script/main.js"></script>
 
     </body>
 </html>
