@@ -640,19 +640,19 @@
 
 @media (max-width: 767px) {
     #pagination {
-        display: block !important; /* Переопределяем display: none */
+        display: block !important;/* Переопределяем display: none */
     }
     
       
     .swiper-slide {
         scroll-snap-align: start;
         flex-shrink: 0;
-        width: 240px;
+        width: 240px !important;
         margin-right: 16px;
     }
   
-    .swiper-wrapper::-webkit-scrollbar {
-        display: none;
+    .swiper-wrapper: {
+        display: flex !important;;
     }
 }
 
@@ -783,9 +783,7 @@
     cursor: pointer;
       }
 
-      #pagination {
-        display: none !important; /* Скрываем пагинацию на больших экранах */
-    }
+      
 
 /* Адаптив Десктоп*/
 @media (min-width: 1024px) {
@@ -914,3 +912,7 @@
   .card {
     width: 240px;
   }
+
+  #pagination {
+        display: none; /* Скрываем пагинацию на больших экранах */
+    }
